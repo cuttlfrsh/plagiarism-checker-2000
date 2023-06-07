@@ -1,0 +1,181 @@
+  # generate random integer values
+  from random import randint
+  
+  number = randint(0, 100)
+  
+  guess = int(input("guess the whole number between 0-100: "))
+  
+  while number != guess:
+  
+      if guess > number:
+          print("the number you chose is too high. try again.")
+      if guess < number:
+          print("the number you chose is too low. try again.")
+  
+      guess = int(input("guess the number between 0-100: "))
+  
+  if number == guess:
+      print("the number you chose is correct. congratulations!")
+  
+- import random
++ # generate random integer values
++ from random import randint
+  
++ number = randint(0, 100)
+- def guess_number():
+-     digit = random.randint(0, 100)
+-     while True:
+-         guess = int(input("Guess the number between 0-100: "))
+-         if guess > digit:
+-             print("Too high. Try again.")
+-         elif guess < digit:
+-             print("Too low. Try again.")
+-         else:
+-             print("Correct. Congratulations!")
+-             break
+  
+- guess_number()
++ guess = int(input("guess the whole number between 0-100: "))
++ 
++ while number != guess:
++ 
++     if guess > number:
++         print("the number you chose is too high. try again.")
++     if guess < number:
++         print("the number you chose is too low. try again.")
++ 
++     guess = int(input("guess the number between 0-100: "))
++ 
++ if number == guess:
++     print("the number you chose is correct. congratulations!")
++ 
+- import random
++ # generate random integer values
++ from random import randint
+  
++ number = randint(0, 100)
+- def guess_number():
+-     digit = random.randint(0, 100)
+-     guess = int(input("Guess the number between 0-100: "))
+-     while digit != guess:
+-         if guess > digit:
+-             print("Too high. Try again.")
+-         elif guess < digit:
+-             print("Too low. Try again.")
+-         guess = int(input("Guess the number between 0-100: "))
+-     print("Correct. Congratulations!")
+  
+- guess_number()
++ guess = int(input("guess the whole number between 0-100: "))
++ 
++ while number != guess:
++ 
++     if guess > number:
++         print("the number you chose is too high. try again.")
++     if guess < number:
++         print("the number you chose is too low. try again.")
++ 
++     guess = int(input("guess the number between 0-100: "))
++ 
++ if number == guess:
++     print("the number you chose is correct. congratulations!")
++ 
++ # generate random integer values
+  from random import randint
+  
++ number = randint(0, 100)
+- def guess_number():
+-     digit = randint(0, 100)
+-     guess = int(input("Guess the number between 0-100: "))
+-     while digit != guess:
+-         if guess > digit:
+-             print("Too high. Try again.")
+-         elif guess < digit:
+-             print("Too low. Try again.")
+-         guess = int(input("Guess the number between 0-100: "))
+-     print("Correct. Congratulations!")
+  
+- guess_number()
++ guess = int(input("guess the whole number between 0-100: "))
++ 
++ while number != guess:
++ 
++     if guess > number:
++         print("the number you chose is too high. try again.")
++     if guess < number:
++         print("the number you chose is too low. try again.")
++ 
++     guess = int(input("guess the number between 0-100: "))
++ 
++ if number == guess:
++     print("the number you chose is correct. congratulations!")
++ 
++ # generate random integer values
+  from random import randint
+  
++ number = randint(0, 100)
+- def guess_number():
+-     digit = randint(0, 100)
+-     guess = int(input("Guess the number between 0-100: "))
+-     while True:
+-         if guess > digit:
+-             print("Too high. Try again.")
+-         elif guess < digit:
+-             print("Too low. Try again.")
+-         else:
+-             break
+-         guess = int(input("Guess the number between 0-100: "))
+-     print("Correct. Congratulations!")
+  
+- guess_number()
++ guess = int(input("guess the whole number between 0-100: "))
++ 
++ while number != guess:
++ 
++     if guess > number:
++         print("the number you chose is too high. try again.")
++     if guess < number:
++         print("the number you chose is too low. try again.")
++ 
++     guess = int(input("guess the number between 0-100: "))
++ 
++ if number == guess:
++     print("the number you chose is correct. congratulations!")
++ 
+  # generate random integer values
+  from random import randint
++ 
++ number = randint(0, 100)
++ 
+- guess = int(input("guess the number between 0-100: "))
++ guess = int(input("guess the whole number between 0-100: "))
+?                              ++++++
+- digit = randint(0, 100)
++ 
+- while digit != guess:
+?       ^^^^^
++ while number != guess:
+?       ^^^^^^
++ 
+-     if guess > digit:
+?                ^^^^^
++     if guess > number:
+?                ^^^^^^
+-         print("too high. try again.")
++         print("the number you chose is too high. try again.")
+?                ++++++++++++++++++++++++
+-     if guess < digit:
+?                ^^^^^
++     if guess < number:
+?                ^^^^^^
+-         print("too low. try again.")
++         print("the number you chose is too low. try again.")
+?                ++++++++++++++++++++++++
++ 
+      guess = int(input("guess the number between 0-100: "))
+- if digit == guess:
++ 
++ if number == guess:
+-     print("correct. congratulations!")+     print("the number you chose is correct. congratulations!")
+?            ++++++++++++++++++++++++                           +
++ 
